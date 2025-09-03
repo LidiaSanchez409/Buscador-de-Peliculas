@@ -15,8 +15,8 @@ function SearchBar({ setMovies }: SearchBarProps) {
     if (!query.trim()) return;
 
     try {
-      const url = new URL("https://www.omdbapi.com/");
-      url.searchParams.append("apikey", "TU_API_KEY"); // 👈 pon aquí tu API key
+      const url = new URL("http://www.omdbapi.com/?i=tt3896198&apikey=bf69cf34");
+      url.searchParams.append("apikey", "bf69cf34"); // 👈 pon aquí tu API key
       url.searchParams.append("s", query);
 
       if (type) url.searchParams.append("type", type);
